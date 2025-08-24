@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King_Of_Trèfle - Création de sites web professionnels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">King_Of_Trèfle</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+        <div class="hero">
+            <h1>Votre site web professionnel en un clic</h1>
+            <p>Nous créons des sites vitrines et e-commerce modernes, rapides et responsives.</p>
+            <a href="#contact" class="btn">Demandez votre site maintenant</a>
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/000000/web-design.png" alt="Site Vitrine">
+                <h3>Site Vitrine</h3>
+                <p>Des sites modernes pour présenter votre entreprise avec style.</p>
+            </div>
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/000000/shopping-cart.png" alt="E-commerce">
+                <h3>Site E-commerce</h3>
+                <p>Boutiques en ligne performantes et sécurisées pour vendre facilement.</p>
+            </div>
+            <div class="service">
+                <img src="https://img.icons8.com/color/96/000000/settings.png" alt="Maintenance">
+                <h3>Maintenance & Support</h3>
+                <p>Mises à jour, sécurité et support pour que votre site reste optimal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>À propos de King_Of_Trèfle</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>King_Of_Trèfle est une agence spécialisée dans la création de sites web professionnels pour entreprises, freelances et particuliers. Nous mettons un point d’honneur à concevoir des sites modernes, rapides et responsives, adaptés à votre image et vos besoins.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1581091870627-3e1842b08b0d?auto=format&fit=crop&w=600&q=80" alt="Web Design">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 King_Of_Trèfle - Tous droits réservés</p>
+            <div class="socials">
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mode sombre
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
